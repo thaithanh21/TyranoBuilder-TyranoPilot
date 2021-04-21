@@ -1,1 +1,5 @@
+[preload  storage="./data/bgimage/room.jpg"  ]
+[preload  storage="./data/bgimage/default.png"  ]
+[preload  storage="./data/bgimage/texttips.png"  ]
+[preload  storage="./data/bgimage/rouka.jpg"  ]
 [return] 

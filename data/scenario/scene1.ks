@@ -11,19 +11,17 @@ And thy shall be called[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-*get_input
-
 [edit  left="360"  top="250"  width="220"  height="47"  size="20"  maxchars="200"  reflect="false"  name="f.playerName"  ]
 [button  storage="scene1.ks"  target="*submit_name"  graphic="title/button_cg.gif"  width="130"  height="26"  x="615"  y="259"  _clickable_img=""  name="img_7"  ]
 [s  ]
 *submit_name
 
 [commit  ]
+[cm  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
-Hello hero [emb exp="f.playerName"] ![p]
-Your journey begins with the UI
-#
+Hello hero [emb exp=f.playerName] ![p]
+Your journey begins with the UI ![p]
 [_tb_end_tyrano_code]
 
 [bg  time="1000"  method="crossfade"  storage="default.png"  ]
@@ -44,7 +42,7 @@ Now take a look.[p]
 Now, the middle part shows the flows of the game.[p]
 On top left corner is the current selected Scene1.ks[p]
 We'll have multiple scene, but for now just let it be like that.[p]
-Now we go to the next session. I need you to remember this.[p]
+Now, before we go to the next session. I need you to remember this.[p]
 [_tb_end_text]
 
 [bg  time="1000"  method="crossfade"  storage="texttips.png"  ]
@@ -81,6 +79,8 @@ Wanna get back to the class or we stay here, love?[l][r]
 
 [_tb_end_text]
 
+*startBranching
+
 [glink  color="black"  storage="scene1.ks"  size="20"  target="*toClassBg"  text="Let's&nbsp;GO"  x="277"  y="320"  width=""  height=""  _clickable_img=""  ]
 [glink  color="black"  storage="scene1.ks"  size="20"  target="*stayBg"  text="Stay&nbsp;here"  x="460"  y="320"  width=""  height=""  _clickable_img=""  ]
 [s  ]
@@ -101,6 +101,20 @@ Wanna get back to the class or we stay here, love?[l][r]
 [tb_start_text mode=2 ]
 #Narrator
 OK! what ever it is, We just made a branching decision,[l][r]
-Wanna go back and check the other option again? to make sure I'm not a linear lying.[l][r]
+Wanna go back and check the other option again? to make sure I'm not a linear lying b*tch.[l][r]
+[_tb_end_text]
+
+[glink  color="black"  storage="scene1.ks"  size="20"  target="*startBranching"  text="Yea&nbsp;let's&nbsp;go&nbsp;back"  x="314"  y="240"  width="152"  height="18"  _clickable_img=""  ]
+[glink  color="black"  storage="scene1.ks"  size="20"  text="I&nbsp;trusted&nbsp;you"  x="339"  y="300"  width=""  height=""  _clickable_img=""  target="*continueFlow"  ]
+[s  ]
+*continueFlow
+
+[tb_start_text mode=1 ]
+#Narrator
+Great, I can't count how many times you go back yet.[p]
+But you got to this dialogue, so it is time for you to take a look at the code...[p]
+Or at least the drag and drop thinggy.[p]
+At this point, you are well mastered the basics of Story and messages components, as wel as control the flow of the game.[p]
+On the next tutorial, we shall lear about multi Scene as well as using Characters components.[p]
 [_tb_end_text]
 
